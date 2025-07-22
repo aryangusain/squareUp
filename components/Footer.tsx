@@ -1,31 +1,18 @@
-import { Page } from "@/types/types"
-import FooterItem from "./FooterItem"
-
 const Footer = () => {
-    const items: Page[] = ["Home", "Services", "Work", "Process", "About", "Careers"]
 
     return (
         <div className="px-[80px] py-[40px] w-full text-gray-100 border-t-1 border-t-gray-600 flex flex-col gap-[40px]">
             <div className="flex">
                 <div className="flex flex-1 pr-[80px] justify-between items-center">
                     <img src={'/logo-desktop.png'} className="h-10" alt="logo" />
-                    
-                    <div className="flex gap-[20px]">
-                        {
-                            items.map((item, index) => {
-                                return <FooterItem key={index} page={item}/>
-                            })
-                        }
-                    </div>
-
                 </div>
 
                 <div className="border-1 rounded-[8px] border-gray-600 flex gap-[20px] items-center py-[10px] pl-[20px] pr-[10px]">
                     <div className="text-gray-100 text-sm">Stay Connected</div>
                     <div className="flex gap-[10px]">
-                        <img src={'/facebook.png'} />
-                        <img src={'/twitter.png'} />
-                        <img src={'/linkedin.png'} />
+                        <img src={'/facebook.png'} className="h-16"/>
+                        <img src={'/twitter.png'} className="h-16"/>
+                        <img src={'/linkedin.png'} className="h-16"/>
                     </div>
                 </div>
             </div>

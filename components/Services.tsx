@@ -17,7 +17,7 @@ const Services = () => {
             description: "Our engineering team combines technical expertise with a passion for innovation to build robust and scalable digital solutions. We leverage the latest technologies and best practices to deliver high-performance applications tailored to your specific needs.",
         },
         {
-            url: "battery.png",
+            url: "/battery.png",
             title: "Project Management",
             description: "Our experienced project management team ensures that your projects are delivered on time, within budget, and according to your specifications. We follow industry-standard methodologies and employ effective communication and collaboration tools to keep you informed throughout the development process.",
         }

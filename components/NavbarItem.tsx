@@ -1,6 +1,6 @@
 import { NavbarItemPropsI } from "@/types/types"
 
-const NavbarItem: React.FC<NavbarItemPropsI> = ({ selected, setCurrentPage, page, children }) => {
+const NavbarItem: React.FC<NavbarItemPropsI> = ({ selected, setCurrentPage, page }) => {
     return (
         <div
             onClick={() => setCurrentPage(page)}

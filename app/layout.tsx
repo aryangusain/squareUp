@@ -26,7 +26,9 @@ export default function RootLayout({
         className={`${barlow.variable} antialiased h-full bg-gray-800 flex flex-col items-center`}
       >
         <Navbar />
-        {children}
+        <div className="mx-[80px] lg:w-280 flex-1 border-x-1 text-white border-x-gray-600">
+          {children}
+        </div>
         <Footer />
       </body>
     </html>

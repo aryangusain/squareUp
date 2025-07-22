@@ -1,5 +1,5 @@
 
-export type Page = "Home" | "Services"| "Work"| "Process"| "About"| "Careers";
+export type Page = "Home" | "Services"| "Work"| "Process"| "About" | "";
 
 export interface NavbarItemPropsI {
     selected: boolean,
@@ -41,4 +41,28 @@ export interface FAQsCardPropsI {
     title: string,
     description: string,
     children?: React.ReactNode
+}
+
+export interface SubsectionBannerPropsI extends FAQsCardPropsI {
+    subtitle: string
+}
+
+export interface SubsectionHeadingPropsI {
+    title: string
+}
+
+export interface SubsectionItemPropsI {
+    url: string,
+    title: string
+}
+
+export interface SubsectionPropsI {
+    title: string,
+    items: SubsectionItemPropsI[]
+}
+
+export interface ProcessItemPropsI extends ExtendClassnamesI{
+    url: string,
+    title: string,
+    description: string,
 }
