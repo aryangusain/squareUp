@@ -4,7 +4,6 @@ export type Page = "Home" | "Services"| "Work"| "Process"| "About" | "";
 export interface NavbarItemPropsI {
     selected: boolean,
     page: Page,
-    setCurrentPage: React.Dispatch<React.SetStateAction<Page>>
     children?: React.ReactNode,
 }
 
@@ -65,4 +64,13 @@ export interface ProcessItemPropsI extends ExtendClassnamesI{
     url: string,
     title: string,
     description: string,
+}
+
+export interface WorkCardPropsI {
+    title: string,
+    name: string,
+    url: string,
+    img: string,
+    description: string,
+    children?: React.ReactNode
 }
