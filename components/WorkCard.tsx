@@ -1,6 +1,5 @@
 import { WorkCardPropsI } from "@/types/types"
 import Paragraph from "./Paragraph"
-import { desc } from "framer-motion/client"
 
 const WorkCard: React.FC<WorkCardPropsI> = ({title, url, img, description, name}) => {
   return (
